@@ -1,0 +1,19 @@
+<div class="todo-table six-column-grid">
+    @for (header of headers; track $index) {
+        <div class="cell header">
+            {{header}}
+        </div>
+    }
+
+    @if(tableRows != null && tableRows.length !== 0) {
+
+        @for (row of tableRows; track $index) {
+            @for (item of row | keyvalue; track $index) {
+                <div>
+                    {{item.value}}
+                </div>
+            }
+        }
+    }
+
+</div>

@@ -1,0 +1,29 @@
+<p>todo-list works!</p>
+
+<div class="todo-table">
+
+    @for (header of headers; track $index) {
+    <div class="cell header">
+        {{header}}
+    </div>
+    }
+
+    @if (todos._tag !== "None") {
+    @for (todo of todos.value.todos; track $index) {
+    <div>
+        <input type="checkbox" (change)="handleSelected($event, todo.id)">
+    </div>
+    <div>
+        {{todo.id}}
+    </div>
+    <div>
+        {{todo.title}}
+    </div>
+    <div>
+        {{todo.dueDate._tag === "None" ? "No due date" : todo.dueDate.value}}
+    </div>
+
+    }
+    }
+
+</div>

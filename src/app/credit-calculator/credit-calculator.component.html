@@ -1,0 +1,42 @@
+<p>credit-calculator works!</p>
+
+<form [formGroup]="creditForm" (ngSubmit)="onSubmit()">
+
+    <label for="years">Years</label>
+    <input id="years" formControlName="years">
+
+    <label for="interestRate">Interest rate</label>
+    <input id="interestRate" formControlName="interestRate">
+
+    <label for="price">Price</label>
+    <input id="price" formControlName="price">
+
+    <button type="submit">Submit</button>
+</form>
+
+<div class="todo-table six-column-grid">
+    @for (header of headers; track $index) {
+        <div class="header">{{header}}</div>
+    }
+
+    @for (item of calculation; track $index) {
+        <div>
+            {{item.year}}
+        </div>
+        <div>
+            {{item.remainingAtYearStart}}
+        </div>
+        <div>
+            {{item.interest}}
+        </div>
+        <div>
+            {{item.creditAtYearsEnd}}
+        </div>
+        <div>
+            {{item.loanRate}}
+        </div>
+        <div>
+            {{item.remainingAtYearsEnd}}
+        </div>
+    }
+</div>

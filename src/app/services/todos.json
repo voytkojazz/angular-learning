@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "Do Angular Tutorial",
+        "dueDate": {
+            "_tag": "Some",
+            "value": "20-11-2024"
+        },
+        "selected": false
+    },
+    {
+        "id": "2",
+        "title": "Throw it away and use React.js or Alpine.js",
+        "dueDate": {
+            "_tag": "Some",
+            "value": "21-11-2024"
+        },
+        "selected": false
+    },
+    {
+      "id": "3",
+      "title": "Burn school",
+      "dueDate": {"_tag": "None"},
+      "selected": false
+    }
+]
